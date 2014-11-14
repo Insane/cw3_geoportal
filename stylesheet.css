@@ -2,15 +2,79 @@ body{
 	background-color:#91BF9E;
 	font-family:"Raleway",sans-serif;
 	font-weight:200;
+	text-align:center;
 }
 h2{
 	color:#0D451D;
+	float:right;
+	margin-right:50px;
 }
 #mapa{
 	height:600px;
-	width:1300px;
+	width:80%;
 	min-width:800px;
-	float:right;
-	margin-right:80px;
+	float:left;
+	margin-left:10%;
 	margin-top:50px;
+	z-index:0;
+	position:relative;
+}
+.menu{
+	float:left;
+}
+.listamenu{
+	margin-top:20px;
+	margin-left:0px;
+	padding:10px 5px 10px 5px;
+	margin-left:30px;
+
+}
+.listamenu li{
+	width:150px;
+	height:30px;
+	padding:5px;
+	z-index:1;
+	position:relative;
+	margin-left:10px;
+}
+
+ul{
+	display:block;
+	list-style-type:none;
+}
+li{
+	display:block;
+	float:left;
+	background-color:#B4D4C5;
+}
+.opcje {
+	position:relative;
+	margin-left:-50px;
+	z-index:2;
+}
+.opcje li{
+	padding-top:5px;
+}
+.opcje li:first-of-type{
+	padding-top:15px;
+}
+.leaflet-control-layers:before{
+	content:"Podkład mapowy";
+	font-size:17px;
+	color:#0D451D;
+}
+.leaflet-control-layers{
+	text-decoration:none;
+	text-align:left;
+	border: 2px solid #0D451D;
+	
+}
+.leaflet-control-zoom{
+		border: 2px solid #0D451D;
+}
+
+.leaflet-control-scale:before{
+	content:"Skala mapy:";
+	font-size:15px;
+	color:#0D451D;
 }
