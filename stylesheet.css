@@ -3,6 +3,8 @@ body{
 	font-family:"Raleway",sans-serif;
 	font-weight:200;
 	text-align:center;
+	background-image:url("https://lh3.googleusercontent.com/-bQS7K-3wsag/VEzCN-bTDfI/AAAAAAAAARc/Hf8PJrwmxK0/s1280/cheetah_6-wallpaper-1600x900.jpg");
+	background-size: 100%;	
 }
 h2{
 	color:#0D451D;
@@ -11,42 +13,39 @@ h2{
 }
 #mapa{
 	height:600px;
-	width:80%;
+	width:85%;
 	min-width:800px;
-	float:left;
-	margin-left:10%;
+	float:right;
+	margin-left:1%;
+	margin-right:2%;
 	margin-top:50px;
-	z-index:0;
-	position:relative;
+	border: 2px solid #0D451D;
+	border-radius:5px;
 }
 .menu{
 	float:left;
 }
 .listamenu{
-	margin-top:20px;
-	margin-left:0px;
+	list-style-type:none;
+	margin-top:90%;
 	padding:10px 5px 10px 5px;
-	margin-left:30px;
 
 }
 .listamenu li{
 	width:150px;
 	height:30px;
 	padding:5px;
-	z-index:1;
-	position:relative;
-	margin-left:10px;
+	padding-top:10px;
+	background-color:#FFFFFF;
+	font-weight:500;
+	margin-top:10px;
+	margin-left:1%;
+	border: 2px solid #0D451D;
+	border-radius:5px;
+	font-size:17px;
+	color:#0D451D;
 }
 
-ul{
-	display:block;
-	list-style-type:none;
-}
-li{
-	display:block;
-	float:left;
-	background-color:#B4D4C5;
-}
 .opcje {
 	position:relative;
 	margin-left:-50px;
@@ -67,14 +66,23 @@ li{
 	text-decoration:none;
 	text-align:left;
 	border: 2px solid #0D451D;
-	
+	padding:5px;
+	width:130px;	
 }
+.leaflet-control-layers-toggle{
+	margin-left:45px;
+}
+
 .leaflet-control-zoom{
 		border: 2px solid #0D451D;
 }
 
 .leaflet-control-scale:before{
-	content:"Skala mapy:";
 	font-size:15px;
 	color:#0D451D;
+}
+#czysc{
+		width:110px;
+		margin:auto;
+		margin-top:10px;
 }

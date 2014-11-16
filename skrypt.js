@@ -1,4 +1,5 @@
 $(function(){
+	$("#czysc").hide();
 	var warstwa_osm=L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
    	 attribution: 'Źródło danych; <a href="http://openstreetmap.org">OpenStreetMap</a>',
 	}),
@@ -30,16 +31,42 @@ $(function(){
 		"Etykiety (ESRI)":etykiety
 	};
 	L.control.layers(baseMaps,inne,{
-		collapsed:false,
+		collapsed:true,
 		position:"topleft"
 	}).addTo(map);
-	
+
 	L.control.zoom({
 		position:"bottomleft",
 		zoomInTitle:"Przybliż",
 		zoomOutTitle:"Oddal"
 	}).addTo(map);
 	
-
+	function markerki(){
+		var markery=[];
+		map.on("click",function(e){
+			var marker = new L.marker(e.latlng).addTo(map);
+			marker.bindPopup("Lat: "+Math.round(e.latlng.lat*1000000)/1000000 + " Lng: "+Math.round(e.latlng.lng*1000000)/1000000);
+			marker.addTo(markery);
+			if (markery.index(marker)==-1){
+				markery.push(marker);
+			}else{
+				for (i=0;i<markery.length;i++){
+					if (markery[i].getLatLng()==e.latlng){
+							markery[i].openPopup();
+				};
+			}}
+		});
+	}
+	$("#punkt").click(function(){
+		markerki();
+		$("#czysc").show();
+		$("#punkt").css("opacity",0.5);
+	});
 	
+	
+	$("#czysc").click(function(){
+		for (i=0;i<markery.length;i++){
+				map.remove(markery);
+		};
+	});
 });	
