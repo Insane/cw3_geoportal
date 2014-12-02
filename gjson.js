@@ -13,6 +13,7 @@ var miejscaGW = [{
 "type": "Polygon",
 "coordinates": [[[15.235322713851929,52.72832015959868], [15.235569477081299,52.728086255056354],[15.240021944046019,52.72935322298494],[15.239657163619995,52.72939220602971],[15.235322713851929,52.72832015959868]]]
 }
+
     },
     {
       "type": "Feature",
@@ -41,8 +42,8 @@ var miejscaGW = [{
     {
       "type": "Feature",
       "properties": {
-      	"nazwa":"Gsleria Askana",
-      	"opis":"3-poziomowa galeria hanflowa, miejsce spotkań w Gorzowie. Można tu zrobić zakupy oraz pójść do kina Helios.",
+      	"nazwa":"Galeria Askana",
+      	"opis":"3-poziomowa galeria handlowa, miejsce spotkań w Gorzowie. Można tu zrobić zakupy oraz pójść do kina Helios.",
       	"linki":"http://www.galeria-askana.pl/index",
       	"zdjecie":"http://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Askana_Gorz%C3%B3w_Wlkp..jpg/240px-Askana_Gorz%C3%B3w_Wlkp..jpg"
       },
@@ -81,7 +82,7 @@ var miejscaGW = [{
       "type": "Feature",
       "properties": {
       	 "nazwa":"Filharmonia Gorzowska",
-      	"opis":"Gmach powstał w miejscu kultowego kina Kopernikm, obecnie nic ciekawego się tam nie dzieje, ale ładnie wygląda",
+      	"opis":"Gmach powstał w miejscu kultowego kina Kopernik, obecnie nic ciekawego się tam nie dzieje, ale ładnie wygląda",
       	"linki":"http://www.filharmoniagorzowska.pl/",
       	"zdjecie":"http://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Filharmonia_Gorzowska.jpg/240px-Filharmonia_Gorzowska.jpg"
 

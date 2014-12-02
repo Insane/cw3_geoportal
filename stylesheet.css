@@ -3,7 +3,7 @@ body{
 	font-family:"Raleway",sans-serif;
 	font-weight:200;
 	text-align:center;
-	background-image:url("http://mareczek.szczecin.pl/ciekawostki/wallpapers/duze/tapeta_09_1440.jpg");
+	background-image:url("https://lh4.googleusercontent.com/-dhJ4b6ED084/VH2eYHImR4I/AAAAAAAAAYE/0xeuu52IyPc/w1080-h675-no/tapeta_09_1440.jpg");
 	background-size: 100%;	
 }
 h2{
@@ -28,7 +28,7 @@ h2{
 }
 .listamenu{
 	list-style-type:none;
-	margin-top:90%;
+	margin-top:120%;
 	padding:10px 5px 10px 5px;
 
 }
@@ -47,17 +47,6 @@ h2{
 	color:#0D451D;
 }
 
-.opcje {
-	position:relative;
-	margin-left:-50px;
-	z-index:2;
-}
-.opcje li{
-	padding-top:5px;
-}
-.opcje li:first-of-type{
-	padding-top:15px;
-}
 .leaflet-control-layers:before{
 	content:"Podkład mapowy";
 	font-size:17px;
@@ -86,4 +75,31 @@ h2{
 		width:110px;
 		margin:auto;
 		margin-top:10px;
+		font-size:14px;
+		background-color:#EBD8AA;
+		padding-bottom:2px;
+}
+#wms1{
+	font-size:14px;
+	width:110px;
+	margin:auto;
+	background-color:#EBD8AA;
+	margin-top:10px;
+	padding-bottom:2px;
+}
+#wms2{
+	font-size:14px;
+	width:120px;
+	margin:auto;
+	background-color:#EBD8AA;
+	margin-top:10px;
+	padding-top:2px;
+}
+#wms3{
+	font-size:14px;
+	margin:auto;
+	width:110px;
+	background-color:#EBD8AA;
+	margin-top:10px;
+	padding-bottom:2px;
 }
